@@ -5930,12 +5930,6 @@ push-push type</description>
 <text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="+5V">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -5968,19 +5962,6 @@ push-push type</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="VCC" symbol="VCC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="+5V" prefix="P+">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="+5V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -6025,7 +6006,6 @@ push-push type</description>
 <part name="PE1" library="supply1" deviceset="PE" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device="" value="3V2"/>
-<part name="P+2" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6221,7 +6201,6 @@ MIPI CSI connector?
 <instance part="PE1" gate="M" x="-177.8" y="45.72"/>
 <instance part="GND3" gate="1" x="-205.74" y="177.8" rot="R180"/>
 <instance part="P+1" gate="VCC" x="-83.82" y="68.58" rot="R180"/>
-<instance part="P+2" gate="1" x="-93.98" y="109.22" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -6589,6 +6568,16 @@ MIPI CSI connector?
 <label x="-109.22" y="71.12" size="1.524" layer="95" xref="yes"/>
 </segment>
 </net>
+<net name="NVCC_EIM0" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$65"/>
+<wire x1="-121.92" y1="73.66" x2="-83.82" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="P$67"/>
+<label x="-83.82" y="78.74" size="1.524" layer="95" xref="yes"/>
+<wire x1="-121.92" y1="78.74" x2="-83.82" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="73.66" x2="-83.82" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
 <net name="DISP1_DATA00" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="P$66"/>
@@ -6601,6 +6590,41 @@ MIPI CSI connector?
 <pinref part="J1" gate="G$1" pin="P$68"/>
 <wire x1="-121.92" y1="81.28" x2="-109.22" y2="81.28" width="0.1524" layer="91"/>
 <label x="-109.22" y="81.28" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$71"/>
+<wire x1="-121.92" y1="88.9" x2="-109.22" y2="88.9" width="0.1524" layer="91"/>
+<label x="-109.22" y="88.9" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$73"/>
+<wire x1="-121.92" y1="93.98" x2="-109.22" y2="93.98" width="0.1524" layer="91"/>
+<label x="-109.22" y="93.98" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$75"/>
+<wire x1="-121.92" y1="99.06" x2="-109.22" y2="99.06" width="0.1524" layer="91"/>
+<label x="-109.22" y="99.06" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$77"/>
+<wire x1="-121.92" y1="104.14" x2="-109.22" y2="104.14" width="0.1524" layer="91"/>
+<label x="-109.22" y="104.14" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$79"/>
+<wire x1="-121.92" y1="109.22" x2="-109.22" y2="109.22" width="0.1524" layer="91"/>
+<label x="-109.22" y="109.22" size="1.524" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PWM2_OUT" class="0">
@@ -6743,51 +6767,10 @@ MIPI CSI connector?
 <label x="-109.22" y="165.1" size="1.524" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="VSNVS_3V0" class="0">
+<net name="N$1" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="P$69"/>
-<wire x1="-121.92" y1="83.82" x2="-109.22" y2="83.82" width="0.1524" layer="91"/>
-<label x="-109.22" y="83.82" size="1.524" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="3V2/NVCC_EIM0" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="P$65"/>
-<wire x1="-121.92" y1="73.66" x2="-83.82" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="P$67"/>
-<label x="-83.82" y="78.74" size="1.524" layer="95" xref="yes"/>
-<wire x1="-121.92" y1="78.74" x2="-83.82" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="-83.82" y1="73.66" x2="-83.82" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="-83.82" y1="73.66" x2="-83.82" y2="71.12" width="0.1524" layer="91"/>
-<junction x="-83.82" y="73.66"/>
-</segment>
-</net>
-<net name="+5V" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="P$71"/>
-<wire x1="-121.92" y1="88.9" x2="-111.76" y2="88.9" width="0.1524" layer="91"/>
-<label x="-109.22" y="88.9" size="1.524" layer="95" xref="yes"/>
-<pinref part="J1" gate="G$1" pin="P$73"/>
-<wire x1="-111.76" y1="88.9" x2="-109.22" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="-121.92" y1="93.98" x2="-111.76" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="-111.76" y1="88.9" x2="-111.76" y2="93.98" width="0.1524" layer="91"/>
-<junction x="-111.76" y="88.9"/>
-<junction x="-111.76" y="93.98"/>
-<pinref part="J1" gate="G$1" pin="P$75"/>
-<wire x1="-121.92" y1="99.06" x2="-111.76" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="-111.76" y1="93.98" x2="-111.76" y2="99.06" width="0.1524" layer="91"/>
-<junction x="-111.76" y="99.06"/>
-<pinref part="J1" gate="G$1" pin="P$77"/>
-<wire x1="-121.92" y1="104.14" x2="-111.76" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-111.76" y1="99.06" x2="-111.76" y2="104.14" width="0.1524" layer="91"/>
-<junction x="-111.76" y="104.14"/>
-<pinref part="J1" gate="G$1" pin="P$79"/>
-<wire x1="-121.92" y1="109.22" x2="-111.76" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="-111.76" y1="104.14" x2="-111.76" y2="109.22" width="0.1524" layer="91"/>
-<junction x="-111.76" y="109.22"/>
-<pinref part="P+2" gate="1" pin="+5V"/>
-<wire x1="-96.52" y1="109.22" x2="-111.76" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-121.92" y1="83.82" x2="-104.14" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
