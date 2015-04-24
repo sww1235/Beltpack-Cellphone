@@ -5924,6 +5924,18 @@ push-push type</description>
 <text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="PE" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
+<symbol name="VCC">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+5V">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -5943,6 +5955,32 @@ push-push type</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="M" symbol="PE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VCC" prefix="P+">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="VCC" symbol="VCC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+5V" prefix="P+">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="+5V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -5986,6 +6024,8 @@ push-push type</description>
 <part name="C1" library="adafruit" deviceset="C-US" device="C0402"/>
 <part name="PE1" library="supply1" deviceset="PE" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
+<part name="P+1" library="supply1" deviceset="VCC" device="" value="3V2"/>
+<part name="P+2" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6174,12 +6214,14 @@ MIPI CSI connector?
 <instance part="USB_POWER_IN" gate="G$1" x="-60.96" y="38.1"/>
 <instance part="MINIDP" gate="G$1" x="-91.44" y="40.64"/>
 <instance part="U$1" gate="G$1" x="-50.8" y="12.7"/>
-<instance part="MICRO_SD" gate="G$1" x="-91.44" y="96.52"/>
+<instance part="MICRO_SD" gate="G$1" x="-231.14" y="101.6" rot="R180"/>
 <instance part="GND" gate="M" x="-157.48" y="50.8"/>
 <instance part="GND2" gate="M" x="-116.84" y="50.8"/>
 <instance part="C1" gate="G$1" x="-205.74" y="167.64" rot="R180"/>
 <instance part="PE1" gate="M" x="-177.8" y="45.72"/>
 <instance part="GND3" gate="1" x="-205.74" y="177.8" rot="R180"/>
+<instance part="P+1" gate="VCC" x="-83.82" y="68.58" rot="R180"/>
+<instance part="P+2" gate="1" x="-93.98" y="109.22" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -6454,6 +6496,298 @@ MIPI CSI connector?
 <pinref part="J1" gate="G$1" pin="P$28"/>
 <wire x1="-152.4" y1="93.98" x2="-165.1" y2="93.98" width="0.1524" layer="91"/>
 <label x="-165.1" y="93.98" size="1.524" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="USB_OTG_PWR_EN" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$30"/>
+<wire x1="-152.4" y1="88.9" x2="-165.1" y2="88.9" width="0.1524" layer="91"/>
+<label x="-165.1" y="88.9" size="1.524" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ECSPI2_SS0" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$32"/>
+<wire x1="-152.4" y1="83.82" x2="-165.1" y2="83.82" width="0.1524" layer="91"/>
+<label x="-165.1" y="83.82" size="1.524" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ECSPI2_SS1" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$34"/>
+<wire x1="-152.4" y1="78.74" x2="-165.1" y2="78.74" width="0.1524" layer="91"/>
+<label x="-165.1" y="78.74" size="1.524" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="I2C3_SCL" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$31"/>
+<wire x1="-152.4" y1="86.36" x2="-165.1" y2="86.36" width="0.1524" layer="91"/>
+<label x="-165.1" y="86.36" size="1.524" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="I2C3_SDA" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$33"/>
+<wire x1="-152.4" y1="81.28" x2="-165.1" y2="81.28" width="0.1524" layer="91"/>
+<label x="-165.1" y="81.28" size="1.524" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="SD3_CLK" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$37"/>
+<wire x1="-152.4" y1="71.12" x2="-165.1" y2="71.12" width="0.1524" layer="91"/>
+<label x="-165.1" y="71.12" size="1.524" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="SD2_CLK" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$38"/>
+<wire x1="-152.4" y1="68.58" x2="-165.1" y2="68.58" width="0.1524" layer="91"/>
+<label x="-165.1" y="68.58" size="1.524" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="SD3_CMD" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$39"/>
+<wire x1="-152.4" y1="66.04" x2="-165.1" y2="66.04" width="0.1524" layer="91"/>
+<label x="-165.1" y="66.04" size="1.524" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="SD2_CMD" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$40"/>
+<wire x1="-152.4" y1="63.5" x2="-165.1" y2="63.5" width="0.1524" layer="91"/>
+<label x="-165.1" y="63.5" size="1.524" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="NVCC_SD2" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$61"/>
+<wire x1="-121.92" y1="63.5" x2="-109.22" y2="63.5" width="0.1524" layer="91"/>
+<label x="-109.22" y="63.5" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="DISP1_DATA05" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$62"/>
+<wire x1="-121.92" y1="66.04" x2="-109.22" y2="66.04" width="0.1524" layer="91"/>
+<label x="-109.22" y="66.04" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="NVCC_SD3" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$63"/>
+<wire x1="-121.92" y1="68.58" x2="-109.22" y2="68.58" width="0.1524" layer="91"/>
+<label x="-109.22" y="68.58" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="DISP1_DATA04" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$64"/>
+<wire x1="-121.92" y1="71.12" x2="-109.22" y2="71.12" width="0.1524" layer="91"/>
+<label x="-109.22" y="71.12" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="DISP1_DATA00" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$66"/>
+<wire x1="-121.92" y1="76.2" x2="-109.22" y2="76.2" width="0.1524" layer="91"/>
+<label x="-109.22" y="76.2" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="PWM1_OUT" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$68"/>
+<wire x1="-121.92" y1="81.28" x2="-109.22" y2="81.28" width="0.1524" layer="91"/>
+<label x="-109.22" y="81.28" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="PWM2_OUT" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$41"/>
+<wire x1="-121.92" y1="116.84" x2="-109.22" y2="116.84" width="0.1524" layer="91"/>
+<label x="-109.22" y="116.84" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SD2_DATA0" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$42"/>
+<wire x1="-121.92" y1="119.38" x2="-109.22" y2="119.38" width="0.1524" layer="91"/>
+<label x="-109.22" y="119.38" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="USB_OTG_VBUS" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$43"/>
+<wire x1="-121.92" y1="121.92" x2="-109.22" y2="121.92" width="0.1524" layer="91"/>
+<label x="-109.22" y="121.92" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SD2_DATA1" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$44"/>
+<wire x1="-121.92" y1="124.46" x2="-109.22" y2="124.46" width="0.1524" layer="91"/>
+<label x="-109.22" y="124.46" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="ECSPI2_MISO" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$45"/>
+<wire x1="-121.92" y1="127" x2="-109.22" y2="127" width="0.1524" layer="91"/>
+<label x="-109.22" y="127" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SD2_DATA2" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$46"/>
+<wire x1="-121.92" y1="129.54" x2="-109.22" y2="129.54" width="0.1524" layer="91"/>
+<label x="-109.22" y="129.54" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="ECSPI2_MOSI" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$47"/>
+<wire x1="-121.92" y1="132.08" x2="-109.22" y2="132.08" width="0.1524" layer="91"/>
+<label x="-109.22" y="132.08" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SD2_DATA3" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$48"/>
+<wire x1="-121.92" y1="134.62" x2="-109.22" y2="134.62" width="0.1524" layer="91"/>
+<label x="-109.22" y="134.62" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="ECSPI2_SCLK" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$49"/>
+<wire x1="-121.92" y1="137.16" x2="-109.22" y2="137.16" width="0.1524" layer="91"/>
+<label x="-109.22" y="137.16" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SD2_CD_B" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$50"/>
+<wire x1="-121.92" y1="139.7" x2="-109.22" y2="139.7" width="0.1524" layer="91"/>
+<label x="-109.22" y="139.7" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="I2C1_SDA" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$51"/>
+<wire x1="-121.92" y1="142.24" x2="-109.22" y2="142.24" width="0.1524" layer="91"/>
+<label x="-109.22" y="142.24" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="USB_H1_VBUS" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$52"/>
+<wire x1="-121.92" y1="144.78" x2="-109.22" y2="144.78" width="0.1524" layer="91"/>
+<label x="-109.22" y="144.78" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="I2C1_SCL" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$53"/>
+<wire x1="-121.92" y1="147.32" x2="-109.22" y2="147.32" width="0.1524" layer="91"/>
+<label x="-109.22" y="147.32" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="DISP1_DATA03" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$54"/>
+<wire x1="-121.92" y1="149.86" x2="-109.22" y2="149.86" width="0.1524" layer="91"/>
+<label x="-109.22" y="149.86" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="PWM3_OUT" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$55"/>
+<wire x1="-121.92" y1="152.4" x2="-109.22" y2="152.4" width="0.1524" layer="91"/>
+<label x="-109.22" y="152.4" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="DISP1_DATA02" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$56"/>
+<wire x1="-121.92" y1="154.94" x2="-109.22" y2="154.94" width="0.1524" layer="91"/>
+<label x="-109.22" y="154.94" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="PWM4_OUT" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$57"/>
+<wire x1="-121.92" y1="157.48" x2="-109.22" y2="157.48" width="0.1524" layer="91"/>
+<label x="-109.22" y="157.48" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="DISP1_DATA06" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$58"/>
+<wire x1="-121.92" y1="160.02" x2="-109.22" y2="160.02" width="0.1524" layer="91"/>
+<label x="-109.22" y="160.02" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="NC_SPDIF_CLK_IN" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$59"/>
+<wire x1="-121.92" y1="162.56" x2="-109.22" y2="162.56" width="0.1524" layer="91"/>
+<label x="-109.22" y="162.56" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="DISP1_DATA01" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$60"/>
+<wire x1="-121.92" y1="165.1" x2="-109.22" y2="165.1" width="0.1524" layer="91"/>
+<label x="-109.22" y="165.1" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="VSNVS_3V0" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$69"/>
+<wire x1="-121.92" y1="83.82" x2="-109.22" y2="83.82" width="0.1524" layer="91"/>
+<label x="-109.22" y="83.82" size="1.524" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="3V2/NVCC_EIM0" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$65"/>
+<wire x1="-121.92" y1="73.66" x2="-83.82" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="P$67"/>
+<label x="-83.82" y="78.74" size="1.524" layer="95" xref="yes"/>
+<wire x1="-121.92" y1="78.74" x2="-83.82" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="73.66" x2="-83.82" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="P+1" gate="VCC" pin="VCC"/>
+<wire x1="-83.82" y1="73.66" x2="-83.82" y2="71.12" width="0.1524" layer="91"/>
+<junction x="-83.82" y="73.66"/>
+</segment>
+</net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="P$71"/>
+<wire x1="-121.92" y1="88.9" x2="-111.76" y2="88.9" width="0.1524" layer="91"/>
+<label x="-109.22" y="88.9" size="1.524" layer="95" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="P$73"/>
+<wire x1="-111.76" y1="88.9" x2="-109.22" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-121.92" y1="93.98" x2="-111.76" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-111.76" y1="88.9" x2="-111.76" y2="93.98" width="0.1524" layer="91"/>
+<junction x="-111.76" y="88.9"/>
+<junction x="-111.76" y="93.98"/>
+<pinref part="J1" gate="G$1" pin="P$75"/>
+<wire x1="-121.92" y1="99.06" x2="-111.76" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-111.76" y1="93.98" x2="-111.76" y2="99.06" width="0.1524" layer="91"/>
+<junction x="-111.76" y="99.06"/>
+<pinref part="J1" gate="G$1" pin="P$77"/>
+<wire x1="-121.92" y1="104.14" x2="-111.76" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="-111.76" y1="99.06" x2="-111.76" y2="104.14" width="0.1524" layer="91"/>
+<junction x="-111.76" y="104.14"/>
+<pinref part="J1" gate="G$1" pin="P$79"/>
+<wire x1="-121.92" y1="109.22" x2="-111.76" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-111.76" y1="104.14" x2="-111.76" y2="109.22" width="0.1524" layer="91"/>
+<junction x="-111.76" y="109.22"/>
+<pinref part="P+2" gate="1" pin="+5V"/>
+<wire x1="-96.52" y1="109.22" x2="-111.76" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
