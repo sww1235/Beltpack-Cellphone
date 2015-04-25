@@ -1,0 +1,616 @@
+Netlist
+
+Exported from Main Schematic.sch at 4/24/15 21:45
+
+EAGLE Version 7.2.0 Copyright (c) 1988-2014 CadSoft
+
+Net                 Part            Pad      Pin        Sheet
+
++5V                 5VBOOST         1        VOUT_2     1
+                    5VBOOST         15       VOUT_3     1
+                    5VBOOST         16       VOUT       1
+                    C10             1        1          1
+                    C16             +        +          1
+                    C3              +        +          1
+                    C8              1        1          1
+                    C9              1        1          1
+                    J1              P$71     P$71       1
+                    J1              P$73     P$73       1
+                    J1              P$75     P$75       1
+                    J1              P$77     P$77       1
+                    J1              P$79     P$79       1
+                    R11             2        2          1
+                    U2              4        VIN        1
+
+3V2/NVCC_EIM0       C17             +        +          1
+                    J1              P$63     P$63       1
+                    J1              P$65     P$65       1
+                    J1              P$67     P$67       1
+                    J1              P$69     P$69       1
+                    L2              2        2          1
+                    R14             1        1          1
+
+3V2/NVCC_EIM1       U$2             3        VIN        1
+
+3V2/NVCC_EIM2       SD2_VSELECT     7        Y1         1
+                    SD2_VSELECT     8        VCC        1
+
+AUD5_RXD            J2              P$57     P$57       1
+                    U1              25       I2S_DOUT   1
+
+AUD5_TXC            J2              P$51     P$51       1
+                    U1              24       I2S_SCLK   1
+
+AUD5_TXD            U1              26       I2S_DIN    1
+
+AUD5_TXFS           J2              P$55     P$55       1
+                    U1              23       I2S_LRCLK  1
+
+BOOT_MODE0          J3              P$3      P$3        1
+
+BOOT_MODE1          J3              P$5      P$5        1
+
+CCM_CLKO1           J2              P$59     P$59       1
+                    U1              21       SYS_MCLK   1
+
+CCM_CLKO2           J2              P$63     P$63       1
+
+CLK1_N              J2              P$3      P$3        1
+
+CLK1_P              J2              P$1      P$1        1
+
+CSI_CLK0P           J2              P$13     P$13       1
+
+CSI_D0M             J2              P$8      P$8        1
+
+CSI_D0P             J2              P$10     P$10       1
+
+CSI_D1M             J2              P$14     P$14       1
+
+CSI_D1P             J2              P$16     P$16       1
+
+CSI_D2M             J2              P$20     P$20       1
+
+CSI_D2P             J2              P$22     P$22       1
+
+CSI_D3M             J2              P$26     P$26       1
+
+CSI_D3P             J2              P$28     P$28       1
+
+DI1_D0_CS           J3              P$45     P$45       1
+
+DI1_D1_CS           J3              P$49     P$49       1
+
+DI1_DISP_CLK        J3              P$54     P$54       1
+
+DI1_PIN01           J3              P$53     P$53       1
+
+DI1_PIN02           J3              P$41     P$41       1
+
+DI1_PIN03           J3              P$51     P$51       1
+
+DI1_PIN15           J3              P$43     P$43       1
+
+DISP1_DATA00        J1              P$66     P$66       1
+
+DISP1_DATA01        J1              P$60     P$60       1
+
+DISP1_DATA02        J1              P$56     P$56       1
+
+DISP1_DATA03        J1              P$54     P$54       1
+
+DISP1_DATA04        J1              P$64     P$64       1
+
+DISP1_DATA05        J1              P$62     P$62       1
+
+DISP1_DATA06        J1              P$58     P$58       1
+
+DISP1_DATA07        J3              P$70     P$70       1
+
+DISP1_DATA08        J3              P$55     P$55       1
+
+DISP1_DATA09        J3              P$60     P$60       1
+
+DISP1_DATA10        J3              P$57     P$57       1
+
+DISP1_DATA11        J3              P$68     P$68       1
+
+DISP1_DATA12        J3              P$59     P$59       1
+
+DISP1_DATA13        J3              P$64     P$64       1
+
+DISP1_DATA14        J3              P$63     P$63       1
+
+DISP1_DATA15        J3              P$62     P$62       1
+
+DISP1_DATA16        J3              P$66     P$66       1
+
+DISP1_DATA17        J3              P$69     P$69       1
+
+DISP1_DATA18        J3              P$56     P$56       1
+
+DISP1_DATA19        J3              P$67     P$67       1
+
+DISP1_DATA20        J3              P$58     P$58       1
+
+DISP1_DATA21        J3              P$40     P$40       1
+
+DISP1_DATA22        J3              P$61     P$61       1
+
+DISP1_DATA23        J3              P$65     P$65       1
+
+DSI_CLK0M           J2              P$44     P$44       1
+
+DSI_CLK0P           J2              P$46     P$46       1
+
+DSI_D0M             J2              P$38     P$38       1
+
+DSI_D0P             J2              P$40     P$40       1
+
+DSI_D1M             J2              P$32     P$32       1
+
+DSI_D1P             J2              P$34     P$34       1
+
+ECSPI2_MISO         J1              P$45     P$45       1
+
+ECSPI2_MOSI         J1              P$47     P$47       1
+
+ECSPI2_SCLK         J1              P$49     P$49       1
+
+ECSPI2_SS0          J1              P$32     P$32       1
+
+ECSPI2_SS1          J1              P$34     P$34       1
+
+EIM_WAIT            J3              P$1      P$1        1
+
+ETH_TCT             C1              1        1          1
+                    ETHERNET        10       10         1
+                    ETHERNET        9        9          1
+                    J1              P$29     P$29       1
+
+GNDC                C1              2        2          1
+
+HDMI_CLKM           J2              P$39     P$39       1
+
+HDMI_CLKP           J2              P$37     P$37       1
+
+HDMI_D0M            J2              P$33     P$33       1
+
+HDMI_D0P            J2              P$31     P$31       1
+
+HDMI_D1M            J2              P$27     P$27       1
+
+HDMI_D1P            J2              P$25     P$25       1
+
+HDMI_D2M            J2              P$21     P$21       1
+
+HDMI_D2P            J2              P$19     P$19       1
+
+HDMI_HPD            J2              P$49     P$49       1
+
+HDMI_TX_CEC_LINE    J2              P$43     P$43       1
+
+HDMI_TX_DDC_SCL     J2              P$45     P$45       1
+
+HDMI_TX_DDC_SDA     J2              P$47     P$47       1
+
+I2C1_SCL            J1              P$53     P$53       1
+                    U1              29       CTRL_CLK   1
+
+I2C1_SDA            J1              P$51     P$51       1
+                    U1              27       CTRL_DATA  1
+
+I2C3_SCL            J1              P$31     P$31       1
+
+I2C3_SDA            J1              P$33     P$33       1
+
+LED_10_100_LED_1000 J1              P$25     P$25       1
+
+LED_ACT             J1              P$27     P$27       1
+
+LOWVOLTAGE          5VBOOST         12       LBO        1
+
+LVDS0_CLK_N         J2              P$78     P$78       1
+
+LVDS0_CLK_P         J2              P$80     P$80       1
+
+LVDS0_TX0_N         J2              P$60     P$60       1
+
+LVDS0_TX0_P         J2              P$62     P$62       1
+
+LVDS0_TX1_N         J2              P$66     P$66       1
+
+LVDS0_TX1_P         J2              P$68     P$68       1
+
+LVDS0_TX2_N         J2              P$72     P$72       1
+
+LVDS0_TX3_N         J2              P$79     P$79       1
+
+LVDS0_TX3_P         J2              P$77     P$77       1
+
+MDI_TRXN0           ETHERNET        2        2          1
+                    J1              P$19     P$19       1
+
+MDI_TRXN1           ETHERNET        4        4          1
+                    J1              P$13     P$13       1
+
+MDI_TRXN2           ETHERNET        6        6          1
+                    J1              P$7      P$7        1
+
+MDI_TRXN3           ETHERNET        8        8          1
+                    J1              P$1      P$1        1
+
+MDI_TRXP0           ETHERNET        1        1          1
+                    J1              P$21     P$21       1
+
+MDI_TRXP1           ETHERNET        3        3          1
+                    J1              P$15     P$15       1
+
+MDI_TRXP2           ETHERNET        5        5          1
+                    J1              P$9      P$9        1
+
+MDI_TRXP3           ETHERNET        7        7          1
+                    J1              P$3      P$3        1
+
+MLB_CN              J3              P$19     P$19       1
+
+MLB_CP              J3              P$17     P$17       1
+
+MLB_DN              J3              P$27     P$27       1
+
+MLB_DP              J3              P$25     P$25       1
+
+MLB_SN              J3              P$23     P$23       1
+
+MLB_SP              J3              P$21     P$21       1
+
+MX6_ONOFF           J3              P$13     P$13       1
+
+N$1                 D1              A        A          1
+                    EXT_POWER_IN    2        2          1
+
+N$2                 D1              C        C          1
+                    LT1085          3        VIN        1
+
+N$3                 BATTERY_CHARGER 6        *PG        1
+                    PWR             C        C          1
+
+N$4                 D2              A        A          1
+                    U$1             VBUS     VBUS       1
+
+N$5                 BATTERY_CHARGER 2        VPCC       1
+                    R1              1        1          1
+                    R2              2        2          1
+
+N$6                 PWR             A        A          1
+                    R3              2        2          1
+
+N$7                 L2              1        1          1
+                    U2              5        LX         1
+
+N$8                 CHRG/LBO        A        A          1
+                    R5              2        2          1
+
+N$9                 BATTERY_CHARGER 7        STAT2      1
+                    DONE            C        C          1
+
+N$10                DONE            A        A          1
+                    R4              2        2          1
+
+N$11                BATTERY_CHARGER 8        STAT1/*LBO 1
+                    CHRG/LBO        C        C          1
+
+N$12                BATT            1        2          1
+                    BATTERY_CHARGER 14       VBAT       1
+                    BATTERY_CHARGER 15       VBAT_2     1
+                    BATTERY_CHARGER 16       VBAT_SENSE 1
+                    C6              1        1          1
+
+N$13                BATTERY_CHARGER 12       PROG3      1
+                    R6              2        2          1
+
+N$14                BATTERY_CHARGER 13       PROG1      1
+                    R7              2        2          1
+
+N$15                5VBOOST         11       EN         1
+                    ON/OFF?         P        P          1
+
+N$16                BATTERY_CHARGER 5        THERM      1
+                    R8              2        2          1
+
+N$17                R8              1        1          1
+                    RT2             2        2          1
+                    THERM           1        1          1
+
+N$18                C11             -        -          1
+                    U1              30       VDDD       1
+
+N$19                R14             2        2          1
+                    R15             1        1          1
+                    U2              7        FB         1
+
+N$20                5VBOOST         9        LBI        1
+                    R10             1        1          1
+                    R9              2        2          1
+
+N$21                C12             -        -          1
+                    U1              20       VDDIO      1
+
+N$22                5VBOOST         3        SW_2       1
+                    5VBOOST         4        SW         1
+                    L1              2        2          1
+
+N$23                5VBOOST         14       FB         1
+                    R11             1        1          1
+                    R12             2        2          1
+
+N$24                C13             -        -          1
+                    U1              10       VAG        1
+
+N$25                C15             +        +          1
+                    U2              2        SS         1
+
+N$27                R13             1        1          1
+                    U2              1        COMP       1
+
+N$28                C14             +        +          1
+                    R13             2        2          1
+
+NVCC_SD2            C19             1        1          1
+                    J1              P$61     P$61       1
+                    SD2_VSELECT     1        COM        1
+
+PCIE_RXM            J2              P$2      P$2        1
+
+PCIE_RXP            J2              P$4      P$4        1
+
+PCIE_TXM            J2              P$7      P$7        1
+
+PCIE_TXP            J2              P$9      P$9        1
+
+PE                  5VBOOST         10       SYNC       1
+                    5VBOOST         13       GND        1
+                    5VBOOST         17       PAD        1
+                    5VBOOST         5        PGND_2     1
+                    5VBOOST         6        PGND_3     1
+                    5VBOOST         7        PGND       1
+                    BATT            2        1          1
+                    BATTERY_CHARGER 10       VSS        1
+                    BATTERY_CHARGER 11       VSS_2      1
+                    BATTERY_CHARGER 21       EP         1
+                    C10             2        2          1
+                    C11             +        +          1
+                    C12             +        +          1
+                    C13             +        +          1
+                    C14             -        -          1
+                    C15             -        -          1
+                    C16             -        -          1
+                    C17             -        -          1
+                    C18             -        -          1
+                    C19             2        2          1
+                    C2              -        -          1
+                    C3              -        -          1
+                    C4              2        2          1
+                    C5              2        2          1
+                    C6              2        2          1
+                    C7              2        2          1
+                    C8              2        2          1
+                    C9              2        2          1
+                    EXT_POWER_IN    1        1          1
+                    J1              P$11     P$11       1
+                    J1              P$14     P$14       1
+                    J1              P$17     P$17       1
+                    J1              P$2      P$2        1
+                    J1              P$20     P$20       1
+                    J1              P$23     P$23       1
+                    J1              P$26     P$26       1
+                    J1              P$35     P$35       1
+                    J1              P$36     P$36       1
+                    J1              P$5      P$5        1
+                    J1              P$70     P$70       1
+                    J1              P$72     P$72       1
+                    J1              P$74     P$74       1
+                    J1              P$76     P$76       1
+                    J1              P$78     P$78       1
+                    J1              P$8      P$8        1
+                    J1              P$80     P$80       1
+                    J2              P$11     P$11       1
+                    J2              P$17     P$17       1
+                    J2              P$18     P$18       1
+                    J2              P$23     P$23       1
+                    J2              P$24     P$24       1
+                    J2              P$29     P$29       1
+                    J2              P$30     P$30       1
+                    J2              P$35     P$35       1
+                    J2              P$36     P$36       1
+                    J2              P$48     P$48       1
+                    J2              P$5      P$5        1
+                    J2              P$58     P$58       1
+                    J2              P$6      P$6        1
+                    J2              P$61     P$61       1
+                    J2              P$64     P$64       1
+                    J2              P$70     P$70       1
+                    J2              P$75     P$75       1
+                    J3              P$10     P$10       1
+                    J3              P$16     P$16       1
+                    J3              P$30     P$30       1
+                    J3              P$33     P$33       1
+                    J3              P$47     P$47       1
+                    J3              P$52     P$52       1
+                    LT1085          1        GND        1
+                    LT1085          THERM    GND        1
+                    MICRO_SD        MT1      GND        1
+                    MICRO_SD        MT2      GND1       1
+                    ON/OFF?         O        O          1
+                    R10             2        2          1
+                    R12             1        1          1
+                    R15             2        2          1
+                    R2              1        1          1
+                    R6              1        1          1
+                    R7              1        1          1
+                    RT1             2        2          1
+                    RT2             1        1          1
+                    SD2_VSELECT     2        INH        1
+                    SD2_VSELECT     3        GND        1
+                    SD2_VSELECT     4        GND        1
+                    THERM           2        2          1
+                    U$1             GND      GND        1
+                    U$2             1        GND        1
+                    U1              1        GND        1
+                    U1              3        GND2       1
+                    U1              31       CTRL_ADR0_CS 1
+                    U1              32       CTRL_MODE  1
+                    U1              7        AGND       1
+                    U1              EXP      GND        1
+                    U2              P$1      GND        1
+
+PMIC_ON_REQ         J3              P$15     P$15       1
+
+PMIC_STBY_REQ       J3              P$9      P$9        1
+
+POR_B               J2              P$65     P$65       1
+
+PWM1_OUT            J1              P$68     P$68       1
+
+PWM2_OUT            J1              P$41     P$41       1
+
+PWM3_OUT            J1              P$55     P$55       1
+
+PWM4_OUT            J1              P$57     P$57       1
+
+SATA_RXN            J1              P$6      P$6        1
+
+SATA_RXP            J1              P$4      P$4        1
+
+SATA_TXN            J1              P$10     P$10       1
+
+SATA_TXP            J1              P$12     P$12       1
+
+SD2_CD_B            J1              P$50     P$50       1
+
+SD2_CLK             J1              P$38     P$38       1
+
+SD2_CMD             J1              P$40     P$40       1
+
+SD2_DATA0           J1              P$42     P$42       1
+
+SD2_DATA1           J1              P$44     P$44       1
+
+SD2_DATA2           J1              P$46     P$46       1
+
+SD2_DATA3           J1              P$48     P$48       1
+
+SD2_VSELECT         J2              P$73     P$73       1
+                    RT1             1        1          1
+                    SD2_VSELECT     5        A          1
+
+SD3_CLK             J1              P$37     P$37       1
+
+SD3_CMD             J1              P$39     P$39       1
+
+SD3_DATA0           J3              P$24     P$24       1
+
+SD3_DATA1           J3              P$22     P$22       1
+
+SD3_DATA2           J3              P$20     P$20       1
+
+SD3_DATA3           J3              P$18     P$18       1
+
+SD3_DATA4           J3              P$8      P$8        1
+
+SD3_DATA5           J3              P$6      P$6        1
+
+SD3_DATA6           J3              P$4      P$4        1
+
+SD3_DATA7           J3              P$2      P$2        1
+
+SD3_RST             J3              P$26     P$26       1
+
+SD3_VSELECT         J3              P$28     P$28       1
+
+SD4_CLK             J3              P$32     P$32       1
+
+SD4_CMD             J3              P$34     P$34       1
+
+SD4_DATA0           J3              P$36     P$36       1
+
+SD4_DATA3           J3              P$38     P$38       1
+
+SPDIF_IN            J3              P$35     P$35       1
+
+SPDIF_OUT           J2              P$50     P$50       1
+
+TAMPER              J3              P$7      P$7        1
+
+UART1_RX_DATA       J2              P$54     P$54       1
+
+UART1_TX_DATA       J2              P$52     P$52       1
+
+UART2_CTS_B         J3              P$48     P$48       1
+
+UART2_RTS_B         J3              P$50     P$50       1
+
+UART2_RX_DATA       J3              P$44     P$44       1
+
+UART2_TX_DATA       J3              P$46     P$46       1
+
+UART3_RX_DATA       J3              P$31     P$31       1
+
+UART3_TX_DATA       J3              P$29     P$29       1
+
+USB_H1_OC           J2              P$69     P$69       1
+
+USB_H1_PWR_EN       J1              P$28     P$28       1
+
+USB_H1_VBUS         J1              P$52     P$52       1
+
+USB_HOST_DN         J1              P$24     P$24       1
+
+USB_HOST_DP         J1              P$22     P$22       1
+
+USB_OTG_CHD_B       J2              P$71     P$71       1
+
+USB_OTG_DN          J1              P$18     P$18       1
+
+USB_OTG_DP          J1              P$16     P$16       1
+
+USB_OTG_ID          J2              P$56     P$56       1
+
+USB_OTG_OC          J2              P$67     P$67       1
+
+USB_OTG_PWR_EN      J1              P$30     P$30       1
+
+USB_OTG_VBUS        J1              P$43     P$43       1
+
+VBAT                5VBOOST         8        VBAT       1
+                    BATTERY_CHARGER 1        OUT_2      1
+                    BATTERY_CHARGER 20       OUT        1
+                    C5              1        1          1
+                    C7              1        1          1
+                    L1              1        1          1
+                    ON/OFF?         S        S          1
+                    R9              1        1          1
+
+VCC_1V8             C18             +        +          1
+                    SD2_VSELECT     6        Y2         1
+                    U$2             2        VOUT       1
+
+VDDA                U1              5        VDDA       1
+
+VIN+5VBATT          BATTERY_CHARGER 17       CE         1
+                    BATTERY_CHARGER 18       IN_2       1
+                    BATTERY_CHARGER 19       IN         1
+                    BATTERY_CHARGER 3        SEL        1
+                    BATTERY_CHARGER 4        PROG2      1
+                    BATTERY_CHARGER 9        *TE        1
+                    C2              +        +          1
+                    C4              1        1          1
+                    D2              C        C          1
+                    LT1085          2        VOUT       1
+                    R1              2        2          1
+                    R3              1        1          1
+                    R4              1        1          1
+                    R5              1        1          1
+
+WDOG1_B             J3              P$42     P$42       1
+
