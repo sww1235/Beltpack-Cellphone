@@ -1,0 +1,1624 @@
+Pinlist
+
+Exported from Main Schematic.brd at 5/1/15 15:12
+
+EAGLE Version 7.2.0 Copyright (c) 1988-2014 CadSoft
+
+Part     Pad      Net
+
+5VBOOST  1        +5V
+         10       PE
+         11       N$15
+         12       LOWVOLTAGE
+         13       PE
+         14       N$23
+         15       +5V
+         16       +5V
+         17       PE
+         2                 *** unconnected ***
+         3        N$22
+         4        N$22
+         5        PE
+         6        PE
+         7        PE
+         8        VBAT
+         9        N$20
+         V                 *** unconnected ***
+         V_2               *** unconnected ***
+         V_3               *** unconnected ***
+         V_4               *** unconnected ***
+         V_5               *** unconnected ***
+
+ADC/DAC  1        PE
+         10       N$24
+         11                *** unconnected ***
+         12                *** unconnected ***
+         13                *** unconnected ***
+         14                *** unconnected ***
+         15       N$21
+         16       N$31
+         17                *** unconnected ***
+         18                *** unconnected ***
+         19                *** unconnected ***
+         2        N$29
+         20       3V2
+         21       CCM_CLKO1
+         22                *** unconnected ***
+         23       AUD5_TXFS
+         24       AUD5_TXC
+         25       AUD5_RXD
+         26       AUD5_TXD
+         27       I2C1_SDA
+         28                *** unconnected ***
+         29       I2C1_SCL
+         3        PE
+         30       N$18
+         31       PE
+         32       PE
+         4                 *** unconnected ***
+         5        3V2
+         6        N$30
+         7        PE
+         8                 *** unconnected ***
+         9                 *** unconnected ***
+         EXP      PE
+
+BATT     1        N$12
+         2        PE
+         NC1               *** unconnected ***
+         NC2               *** unconnected ***
+
+BATTERY_CHARGER 1        VBAT
+         10       PE
+         11       PE
+         12       N$13
+         13       N$14
+         14       N$12
+         15       N$12
+         16       N$12
+         17       VIN+5VBATT
+         18       VIN+5VBATT
+         19       VIN+5VBATT
+         2        N$5
+         20       VBAT
+         21       PE
+         3        VIN+5VBATT
+         4        VIN+5VBATT
+         5        N$16
+         6        N$3
+         7        N$9
+         8        N$11
+         9        VIN+5VBATT
+
+C1       1        ETH_TCT
+         2        GNDC
+
+C2       +        VIN+5VBATT
+         -        PE
+
+C3       +        +5V
+         -        PE
+
+C4       1        VIN+5VBATT
+         2        PE
+
+C5       1        VBAT
+         2        PE
+
+C6       1        N$12
+         2        PE
+
+C7       1        VBAT
+         2        PE
+
+C8       1        +5V
+         2        PE
+
+C9       1        +5V
+         2        PE
+
+C10      1        +5V
+         2        PE
+
+C11      +        PE
+         -        N$18
+
+C12      +        PE
+         -        3V2
+
+C13      +        PE
+         -        N$24
+
+C14      +        N$28
+         -        PE
+
+C15      +        N$25
+         -        PE
+
+C16      +        +5V
+         -        PE
+
+C17      +        3V2
+         -        PE
+
+C18      +        1V8
+         -        PE
+
+C19      1        NVCC_SD2
+         2        PE
+
+C20      +        V_SD
+         -        PE
+
+C21      1        N$29
+         2        STEREO_OUT_R
+
+C22      1        N$30
+         2        STEREO_OUT_L
+
+C23      +        PE
+         -        3V2
+
+C24      +        N$21
+         -        MIC_IN
+
+C25      +        PE
+         -        N$31
+
+C26      +        XIN
+         -        PE
+
+C27      +        XOUT
+         -        PE
+
+C28      +        V_3V2_FLTR
+         -        PE
+
+C29      +        V_3V2_FLTR
+         -        PE
+
+C30      +        V_3V2_FLTR
+         -        PE
+
+C31      1        V_3V2_FLTR
+         2        PE
+
+C32      1        V_3V2_FLTR
+         2        PE
+
+C33      +        +5V
+         -        N$39
+
+C34      1        +5V
+         2        PE
+
+C35      +        N$40
+         -        PE
+
+C36      +        N$41
+         -        PE
+
+C37      +        N$44
+         -        N$46
+
+C38      +        N$43
+         -        N$45
+
+C39      1        N$56
+         2        PE
+
+C40      1        N$32
+         2        PE
+
+C41      1        N$33
+         2        PE
+
+C42      1        N$42
+         2        PE
+
+C43      +        N$49
+         -        N$47
+
+C44      +        N$50
+         -        N$48
+
+C45      1        N$51
+         2        SATA_RXP
+
+C46      1        N$59
+         2        SATA_RXN
+
+C47      1        N$60
+         2        SATA_TXN
+
+C48      1        N$61
+         2        SATA_TXP
+
+C49      +        3V2
+         -        PE
+
+C50      +        V_1V5
+         -        PE
+
+C51      +        3V2
+         -        PE
+
+C52      +        1V5
+         -        PE
+
+C53      +        PCIE_TXP2
+         -        N$63
+
+C54      +        PCIE_TXM2
+         -        N$62
+
+C55      +        PCIE_TXP1
+         -        N$67
+
+C56      +        PCIE_TXM1
+         -        N$66
+
+C57      +        N$75
+         -        CLK1_N
+
+C58      +        N$77
+         -        CLK1_P
+
+C59      1        1V5
+         2        PE
+
+C60      1        VDDA15_0
+         2        PE
+
+C61      1        VDDA15_0
+         2        PE
+
+C62      1        VDDA15_0
+         2        PE
+
+C63      1        VDDA15_0
+         2        PE
+
+C66      1        VDDCOMBIO
+         2        PE
+
+C67      1        VDDCOMBIO
+         2        PE
+
+C68      1        VDDCOMBIO
+         2        PE
+
+C69      1        1V5
+         2        PE
+
+C70      1        VDDA15_1
+         2        PE
+
+C71      1        VDDA15_1
+         2        PE
+
+C72      1        VDDA15_1
+         2        PE
+
+C73      1        VDDA15_1
+         2        PE
+
+C74      1        3V2
+         2        PE
+
+C75      1        VDDA33F
+         2        PE
+
+C76      1        VDDCOMB33
+         2        PE
+
+C77      1        VDDCOMB33
+         2        PE
+
+C78      1        VDDCOMB33
+         2        PE
+
+C79      1        1V5
+         2        PE
+
+C80      1        VDDA15_2
+         2        PE
+
+C81      1        VDDA15_2
+         2        PE
+
+C82      1        VDDA15_2
+         2        PE
+
+C83      1        VDDA15_2
+         2        PE
+
+C84      1        3V2
+         2        PE
+
+C85      1        VDD33REF
+         2        PE
+
+C86      1        VDDCOMB15
+         2        PE
+
+C87      1        VDDCOMB15
+         2        PE
+
+C88      1        VDDCOMB15
+         2        PE
+
+C89      1        1V5
+         2        PE
+
+C90      1        VDDA15_3
+         2        PE
+
+C91      1        VDDA15_3
+         2        PE
+
+C92      1        VDDA15_3
+         2        PE
+
+C93      1        VDDA15_3
+         2        PE
+
+C94      1        3V2
+         2        PE
+
+C95      1        3V2
+         2        PE
+
+C96      1        3V2
+         2        PE
+
+C97      1        3V2
+         2        PE
+
+C98      1        3V2
+         2        PE
+
+C99      1        3V2
+         2        PE
+
+C100     1        3V2
+         2        PE
+
+C101     1        3V2
+         2        PE
+
+C102     1        1V5
+         2        PE
+
+C103     1        VDD15REF
+         2        PE
+
+C104     1        1V5
+         2        PE
+
+C105     1        1V5
+         2        PE
+
+C106     1        1V5
+         2        PE
+
+C107     1        1V5
+         2        PE
+
+C108     1        1V5
+         2        PE
+
+C109     1        1V5
+         2        PE
+
+C110     1        1V5
+         2        PE
+
+C111     1        1V5
+         2        PE
+
+C112     1        1V5
+         2        PE
+
+C113     1        1V5
+         2        PE
+
+C114     1        1V5
+         2        PE
+
+C115     1        1V5
+         2        PE
+
+C116     1        1V5
+         2        PE
+
+C117     1        1V5
+         2        PE
+
+C118     1        1V5
+         2        PE
+
+C119     1        1V5
+         2        PE
+
+C120     1        1V5
+         2        PE
+
+C121     1        1V5
+         2        PE
+
+C122     1        1V5
+         2        PE
+
+C123     1        1V5
+         2        PE
+
+C124     1        1V5
+         2        PE
+
+C125     1        1V5
+         2        PE
+
+C126     1        1V5
+         2        PE
+
+C127     1        1V5
+         2        PE
+
+CHRG/LBO A        N$8
+         C        N$11
+
+D1       A        N$1
+         C        N$2
+
+D2       A        N$4
+         C        VIN+5VBATT
+
+D3       A        N$26
+         C        HDMI_CEC_C
+
+DONE     A        N$10
+         C        N$9
+
+ETHERNET 1        MDI_TRXP0
+         10       ETH_TCT
+         2        MDI_TRXN0
+         3        MDI_TRXP1
+         4        MDI_TRXN1
+         5        MDI_TRXP2
+         6        MDI_TRXN2
+         7        MDI_TRXP3
+         8        MDI_TRXN3
+         9        ETH_TCT
+
+EXT_POWER_IN 1        PE
+         2        N$1
+
+EXT_RADIO_INTERFACE 1        PE
+         2        DISP1_DATA01
+         3        DISP1_DATA00
+         4        N$41
+         5        N$48
+         6        N$47
+         7        N$41
+         8        N$46
+         9        N$45
+
+GPIOA    1        3V2
+         10       TXD1
+         11       RXD1
+         12       TXD2
+         13       RXD2
+         14       PE
+         2        +5V
+         3        ECSPI2_MOSI
+         4        ECSPI2_MISO
+         5        ECSPI2_SCLK
+         6        ECSPI2_SS0
+         7        ECSPI2_SS1
+         8        TXD0
+         9        RXD0
+
+GPIOB    1        3V2
+         10       DISP1_DATA04
+         11       DISP1_DATA06
+         12       N$79
+         13       N$80
+         14       PE
+         2        +5V
+         3        12C3_SDA
+         4        I2C3_SCL
+         5        USB_OTG_ID
+         6        SD3_CLK
+         7        SD3_CMD
+         8        DISP1_DATA02
+         9        DISP1_DATA03
+
+HDMI     P$1      TMDS2+_C
+         P$10     TMDSCLK+_C
+         P$11     PE
+         P$12     TMDSCLK-_C
+         P$13     HDMI_CEC_C
+         P$14              *** unconnected ***
+         P$15     HDMI_SCL_C
+         P$16     HDMI_SDA_C
+         P$17     PE
+         P$18     +5V
+         P$19     HDMI_HPD_C
+         P$2      PE
+         P$20              *** unconnected ***
+         P$21              *** unconnected ***
+         P$22              *** unconnected ***
+         P$23              *** unconnected ***
+         P$3      TMDS2-_C
+         P$4      TMDS1+_C
+         P$5      PE
+         P$6      TMDS1-_C
+         P$7      TMDS0+_C
+         P$8      PE
+         P$9      TMDS0-_C
+
+HEADSET  1        PE
+         2        MIC_IN
+         3        PE
+         4        STEREO_OUT_L
+         5        STEREO_OUT_R
+
+J1       P$1      MDI_TRXN3
+         P$10     SATA_TXN
+         P$11     PE
+         P$12     SATA_TXP
+         P$13     MDI_TRXN1
+         P$14     PE
+         P$15     MDI_TRXP1
+         P$16     USB_OTG_DP
+         P$17     PE
+         P$18     USB_OTG_DN
+         P$19     MDI_TRXN0
+         P$2      PE
+         P$20     PE
+         P$21     MDI_TRXP0
+         P$22     USB_HOST_DP
+         P$23     PE
+         P$24     USB_HOST_DN
+         P$25     LED_10_100_LED_1000
+         P$26     PE
+         P$27     LED_ACT
+         P$28     USB_H1_PWR_EN
+         P$29     ETH_TCT
+         P$3      MDI_TRXP3
+         P$30     USB_OTG_PWR_EN
+         P$31     I2C3_SCL
+         P$32     ECSPI2_SS0
+         P$33     I2C3_SDA
+         P$34     ECSPI2_SS1
+         P$35     PE
+         P$36     PE
+         P$37     SD3_CLK
+         P$38     SD2_CLK
+         P$39     SD3_CMD
+         P$4      SATA_RXP
+         P$40     SD2_CMD
+         P$41     PWM2_OUT
+         P$42     SD2_DATA0
+         P$43     USB_OTG_VBUS
+         P$44     SD2_DATA1
+         P$45     ECSPI2_MISO
+         P$46     SD2_DATA2
+         P$47     ECSPI2_MOSI
+         P$48     SD2_DATA3
+         P$49     ECSPI2_SCLK
+         P$5      PE
+         P$50     SD2_CD_B
+         P$51     I2C1_SDA
+         P$52     USB_H1_VBUS
+         P$53     I2C1_SCL
+         P$54     DISP1_DATA03
+         P$55     PWM3_OUT
+         P$56     DISP1_DATA02
+         P$57     PWM4_OUT
+         P$58     DISP1_DATA06
+         P$59              *** unconnected ***
+         P$6      SATA_RXN
+         P$60     DISP1_DATA01
+         P$61     NVCC_SD2
+         P$62     DISP1_DATA05
+         P$63     3V2
+         P$64     DISP1_DATA04
+         P$65     3V2
+         P$66     DISP1_DATA00
+         P$67     3V2
+         P$68     PWM1_OUT
+         P$69     3V2
+         P$7      MDI_TRXN2
+         P$70     PE
+         P$71     +5V
+         P$72     PE
+         P$73     +5V
+         P$74     PE
+         P$75     +5V
+         P$76     PE
+         P$77     +5V
+         P$78     PE
+         P$79     +5V
+         P$8      PE
+         P$80     PE
+         P$9      MDI_TRXP2
+
+J2       P$1      CLK1_P
+         P$10     CSI_D0P
+         P$11     PE
+         P$12     PE
+         P$13     CSI_CLK0P
+         P$14     CSI_D1M
+         P$15              *** unconnected ***
+         P$16     CSI_D1P
+         P$17     PE
+         P$18     PE
+         P$19     HDMI_D2P
+         P$2      PCIE_RXM
+         P$20     CSI_D2M
+         P$21     HDMI_D2M
+         P$22     CSI_D2P
+         P$23     PE
+         P$24     PE
+         P$25     HDMI_D1P
+         P$26     CSI_D3M
+         P$27     HDMI_D1M
+         P$28     CSI_D3P
+         P$29     PE
+         P$3      CLK1_N
+         P$30     PE
+         P$31     HDMI_D0P
+         P$32     DSI_D1M
+         P$33     HDMI_D0M
+         P$34     DSI_D1P
+         P$35     PE
+         P$36     PE
+         P$37     HDMI_CLKP
+         P$38     DSI_D0M
+         P$39     HDMI_CLKM
+         P$4      PCIE_RXP
+         P$40     DSI_D0P
+         P$41              *** unconnected ***
+         P$42              *** unconnected ***
+         P$43     HDMI_TX_CEC_LINE
+         P$44     DSI_CLK0M
+         P$45     HDMI_TX_DDC_SCL
+         P$46     DSI_CLK0P
+         P$47     HDMI_TX_DDC_SDA
+         P$48     PE
+         P$49     HDMI_HPD
+         P$5      PE
+         P$50     SPDIF_OUT
+         P$51     AUD5_TXC
+         P$52     UART1_TX_DATA
+         P$53     AUD5_TXD
+         P$54     UART1_RX_DATA
+         P$55     AUD5_TXFS
+         P$56     USB_OTG_ID
+         P$57     AUD5_RXD
+         P$58     PE
+         P$59     CCM_CLKO1
+         P$6      PE
+         P$60     LVDS0_TX0_N
+         P$61     PE
+         P$62     LVDS0_TX0_P
+         P$63     CCM_CLKO2
+         P$64     PE
+         P$65     POR_B
+         P$66     LVDS0_TX1_N
+         P$67     USB_OTG_OC
+         P$68     LVDS0_TX1_P
+         P$69     USB_H1_OC
+         P$7      PCIE_TXM
+         P$70     PE
+         P$71     USB_OTG_CHD_B
+         P$72     LVDS0_TX2_N
+         P$73     SD2_VSELECT
+         P$74     LVDS0_TX2_P
+         P$75     PE
+         P$76              *** unconnected ***
+         P$77     LVDS0_TX3_P
+         P$78     LVDS0_CLK_N
+         P$79     LVDS0_TX3_N
+         P$8      CSI_D0M
+         P$80     LVDS0_CLK_P
+         P$9      PCIE_TXP
+
+J3       P$1      EIM_WAIT
+         P$10     PE
+         P$11              *** unconnected ***
+         P$12              *** unconnected ***
+         P$13     MX6_ONOFF
+         P$14              *** unconnected ***
+         P$15     PMIC_ON_REQ
+         P$16     PE
+         P$17     MLB_CP
+         P$18     SD3_DATA3
+         P$19     MLB_CN
+         P$2      SD3_DATA7
+         P$20     SD3_DATA2
+         P$21     MLB_SP
+         P$22     SD3_DATA1
+         P$23     MLB_SN
+         P$24     SD3_DATA0
+         P$25     MLB_DP
+         P$26     SD3_RST
+         P$27     MLB_DN
+         P$28     SD3_VSELECT
+         P$29     UART3_TX_DATA
+         P$3      BOOT_MODE0
+         P$30     PE
+         P$31     UART3_RX_DATA
+         P$32     SD4_CLK
+         P$33     PE
+         P$34     SD4_CMD
+         P$35     SPDIF_IN
+         P$36     SD4_DATA0
+         P$37              *** unconnected ***
+         P$38     SD4_DATA3
+         P$39              *** unconnected ***
+         P$4      SD3_DATA6
+         P$40     DISP1_DATA21
+         P$41     DI1_PIN02
+         P$42     WDOG1_B
+         P$43     DI1_PIN15
+         P$44     UART2_RX_DATA
+         P$45     DI1_D0_CS
+         P$46     UART2_TX_DATA
+         P$47     PE
+         P$48     UART2_CTS_B
+         P$49     DI1_D1_CS
+         P$5      BOOT_MODE1
+         P$50     UART2_RTS_B
+         P$51     DI1_PIN03
+         P$52     PE
+         P$53     DI1_PIN01
+         P$54     DI1_DISP_CLK
+         P$55     DISP1_DATA08
+         P$56     DISP1_DATA18
+         P$57     DISP1_DATA10
+         P$58     DISP1_DATA20
+         P$59     DISP1_DATA12
+         P$6      SD3_DATA5
+         P$60     DISP1_DATA09
+         P$61     DISP1_DATA22
+         P$62     DISP1_DATA15
+         P$63     DISP1_DATA14
+         P$64     DISP1_DATA13
+         P$65     DISP1_DATA23
+         P$66     DISP1_DATA16
+         P$67     DISP1_DATA19
+         P$68     DISP1_DATA11
+         P$69     DISP1_DATA17
+         P$7      TAMPER
+         P$70     DISP1_DATA07
+         P$8      SD3_DATA4
+         P$9      PMIC_STBY_REQ
+
+L1       1        VBAT
+         2        N$22
+
+L2       1        N$7
+         2        3V2
+
+L3       1        3V2
+         2        V_3V2_FLTR
+
+L4       1        1V5
+         2        VDDA15_0
+
+L5       1        1V5
+         2        VDDA15_1
+
+L6       1        1V5
+         2        VDDA15_2
+
+L7       1        1V5
+         2        VDDA15_3
+
+L8       1        1V5
+         2        VDD15REF
+
+L10      1        3V2
+         2        VDDA33F
+
+L11      1        3V2
+         2        VDD33REF
+
+LT1085   1        PE
+         2        VIN+5VBATT
+         3        N$2
+         THERM    PE
+
+MICRO_SD 1        SD2_DATA2
+         2        SD2_DATA3
+         3        SD2_CMD
+         4        V_SD
+         5        SD2_CLK
+         6        PE
+         7        SD2_DATA0
+         8        SD2_DATA1
+         CD1      SD2_CD_B
+         CD2      SD2_CD_B
+         MT1      PE
+         MT2      PE
+
+MSATA    1                 *** unconnected ***
+         10                *** unconnected ***
+         11                *** unconnected ***
+         12                *** unconnected ***
+         13                *** unconnected ***
+         14                *** unconnected ***
+         15       PE
+         16                *** unconnected ***
+         17                *** unconnected ***
+         18       PE
+         19                *** unconnected ***
+         2        3V2
+         20       MSATA_DISABLE
+         21       PE
+         22       POR_B
+         23       N$51
+         24       3V2
+         25       N$59
+         26       PE
+         27       PE
+         28       V_1V5
+         29       PE
+         3                 *** unconnected ***
+         30       I2C1_SCL
+         31       N$60
+         32       I2C1_SDA
+         33       N$61
+         34       PE
+         35       PE
+         36                *** unconnected ***
+         37       PE
+         38                *** unconnected ***
+         39       3V2
+         4        PE
+         40       PE
+         41       3V2
+         42                *** unconnected ***
+         43       PE
+         44                *** unconnected ***
+         45                *** unconnected ***
+         46                *** unconnected ***
+         47                *** unconnected ***
+         48       V_1V5
+         49                *** unconnected ***
+         5                 *** unconnected ***
+         50       PE
+         51                *** unconnected ***
+         52       3V2
+         6        V_1V5
+         7                 *** unconnected ***
+         8                 *** unconnected ***
+         9        PE
+         M1                *** unconnected ***
+         M2                *** unconnected ***
+         M3                *** unconnected ***
+         M4                *** unconnected ***
+         M5                *** unconnected ***
+         M6                *** unconnected ***
+
+ON/OFF?  O        PE
+         P        N$15
+         S        VBAT
+
+PCIE1    1                 *** unconnected ***
+         10       UIM_DATA_1
+         11       REFCLKN_1
+         12       UIM_CLK_1
+         13       REFCLKP_1
+         14       UIM_RST_1
+         15       PE
+         16       UIM_VPP_1
+         17                *** unconnected ***
+         18       PE
+         19                *** unconnected ***
+         2        3V2
+         20       MSATA_DISABLE
+         21       PE
+         22       DN1_PERST
+         23       PCIE_RXM1
+         24       3V2
+         25       PCIE_RXP1
+         26       PE
+         27       PE
+         28       1V5
+         29       PE
+         3                 *** unconnected ***
+         30                *** unconnected ***
+         31       N$66
+         32                *** unconnected ***
+         33       N$67
+         34       PE
+         35       PE
+         36       USB_HUB_DN2
+         37       PE
+         38       USB_HUB_DP2
+         39       3V2
+         4        PE
+         40       PE
+         41       3V2
+         42                *** unconnected ***
+         43       PE
+         44                *** unconnected ***
+         45                *** unconnected ***
+         46                *** unconnected ***
+         47                *** unconnected ***
+         48       1V5
+         49                *** unconnected ***
+         5                 *** unconnected ***
+         50       PE
+         51                *** unconnected ***
+         52       3V2
+         6        1V5
+         7                 *** unconnected ***
+         8        UIM_PWR_1
+         9        PE
+         M1                *** unconnected ***
+         M2                *** unconnected ***
+         M3                *** unconnected ***
+         M4                *** unconnected ***
+         M5                *** unconnected ***
+         M6                *** unconnected ***
+
+PCIE2    1                 *** unconnected ***
+         10       UIM_DATA_2
+         11       REFCLKN_2
+         12       UIM_CLK_2
+         13       REFCLKP_2
+         14       UIM_RST_2
+         15       PE
+         16       UIM_VPP_2
+         17                *** unconnected ***
+         18       PE
+         19                *** unconnected ***
+         2        3V2
+         20       MSATA_DISABLE
+         21       PE
+         22       DN2_PERST
+         23       PCIE_RXM2
+         24       3V2
+         25       PCIE_RXP2
+         26       PE
+         27       PE
+         28       1V5
+         29       PE
+         3                 *** unconnected ***
+         30                *** unconnected ***
+         31       N$62
+         32                *** unconnected ***
+         33       N$63
+         34       PE
+         35       PE
+         36       USB_HUB_DN3
+         37       PE
+         38       USB_HUB_DP3
+         39       3V2
+         4        PE
+         40       PE
+         41       3V2
+         42                *** unconnected ***
+         43       PE
+         44                *** unconnected ***
+         45                *** unconnected ***
+         46                *** unconnected ***
+         47                *** unconnected ***
+         48       1V5
+         49                *** unconnected ***
+         5                 *** unconnected ***
+         50       PE
+         51                *** unconnected ***
+         52       3V2
+         6        1V5
+         7                 *** unconnected ***
+         8        UIM_PWR_2
+         9        PE
+         M1                *** unconnected ***
+         M2                *** unconnected ***
+         M3                *** unconnected ***
+         M4                *** unconnected ***
+         M5                *** unconnected ***
+         M6                *** unconnected ***
+
+PWR      A        N$6
+         C        N$3
+
+Q1       1        PWM2_OUT
+         2        3V2
+         3        V_SD
+
+Q2       1        XIN
+         2                 *** unconnected ***
+         3        XOUT
+         4                 *** unconnected ***
+
+R1       1        N$5
+         2        VIN+5VBATT
+
+R2       1        PE
+         2        N$5
+
+R3       1        VIN+5VBATT
+         2        N$6
+
+R4       1        VIN+5VBATT
+         2        N$10
+
+R5       1        VIN+5VBATT
+         2        N$8
+
+R6       1        PE
+         2        N$13
+
+R7       1        PE
+         2        N$14
+
+R8       1        N$17
+         2        N$16
+
+R9       1        VBAT
+         2        N$20
+
+R10      1        N$20
+         2        PE
+
+R11      1        N$23
+         2        +5V
+
+R12      1        PE
+         2        N$23
+
+R13      1        N$27
+         2        N$28
+
+R14      1        3V2
+         2        N$19
+
+R15      1        N$19
+         2        PE
+
+R16      1        MSATA_DISABLE
+         2        3V2
+
+R17      1        PE
+         2        V_1V5
+
+R18      1        PE
+         2        1V5
+
+R19      1        3V2
+         2        RXD1
+
+R20      1        3V2
+         2        RXD0
+
+R21      1        VAUX33REF
+         2        3V2
+
+R22      1        3V2
+         2        RXD2
+
+RESET    1                 *** unconnected ***
+         2                 *** unconnected ***
+         3        PE
+         4        POR_B
+
+RN1      1        USB_HUB_DP4
+         2        N$54
+         3        N$57
+         4        N$58
+         5        MUTE/PWR_DOWN
+         6        MUTE/PWR_DOWN
+         7        MUTE/PWR_DOWN
+         8        N$56
+
+RT1      1        SD2_VSELECT
+         2        PE
+
+RT2      1        PE
+         2        N$17
+
+RT3      1        PE
+         2        PWM2_OUT
+
+RT4      1        PE
+         2        V_SD
+
+RT5      1        N$26
+         2        3V2
+
+RT6      1        MIC_IN
+         2        N$31
+
+RT7      1        N$35
+         2        PE
+
+RT8      1        N$34
+         2        PE
+
+RT9      1        N$36
+         2        +5V
+
+RT10     1        N$38
+         2        USB_HUB_DP4
+
+RT11     1        N$37
+         2        USB_HUB_DN4
+
+RT12     1        XIN
+         2        XOUT
+
+RT13     1        REFCLKP_1_R
+         2        REFCLKP_1
+
+RT14     1        REFCLKN_1_R
+         2        REFCLKN_1
+
+RT15     1        REFCLKP_1
+         2        PE
+
+RT16     1        REFCLKN_1
+         2        PE
+
+RT17     1        REFCLKP_3_R
+         2        REFCLKP_3
+
+RT18     1        REFCLKN_3_R
+         2        REFCLKN_3
+
+RT19     1        REFCLKP_3
+         2        PE
+
+RT20     1        REFCLKN_3
+         2        PE
+
+RT21     1        REFCLKP_2_R
+         2        REFCLKP_2
+
+RT22     1        REFCLKN_2_R
+         2        REFCLKN_2
+
+RT23     1        REFCLKP_2
+         2        PE
+
+RT24     1        REFCLKN_2
+         2        PE
+
+RT25     1        PE
+         2        DN2_PERST
+
+RT26     1        PE
+         2        DN3_PERST
+
+RT27     1        PE
+         2        DN1_PERST
+
+RT28     1        PE
+         2        DISP1_DATA05
+
+SD2_VSELECT 1        NVCC_SD2
+         2        PE
+         3        PE
+         4        PE
+         5        SD2_VSELECT
+         6        1V8
+         7        3V2
+         8        3V2
+
+SW1      1        N$55
+         2        N$54
+         3        N$55
+         4        N$54
+
+SW2      1        N$53
+         2        N$57
+         3        N$53
+         4        N$57
+
+SW3      1        N$52
+         2        N$58
+         3        N$52
+         4        N$58
+
+THERM    1        N$17
+         2        PE
+
+U$1      GND      PE
+         GND1              *** unconnected ***
+         GND4              *** unconnected ***
+         VBUS     N$4
+
+U$2      1        PE
+         2        1V8
+         3        3V2
+
+U$3      P$1      HDMI_D2P
+         P$10     TMDS2+_C
+         P$2      HDMI_D2M
+         P$3      PE
+         P$4      HDMI_D1P
+         P$5      HDMI_D1M
+         P$6      TMDS1-_C
+         P$7      TMDS1+_C
+         P$8      PE
+         P$9      TMDS2-_C
+
+U$4      P$1      HDMI_D0P
+         P$10     TMDS0+_C
+         P$2      HDMI_D0M
+         P$3      PE
+         P$4      HDMI_CLKP
+         P$5      HDMI_CLKM
+         P$6      TMDSCLK-_C
+         P$7      TMDSCLK+_C
+         P$8      PE
+         P$9      TMDS0-_C
+
+U$5      P$1      HDMI_TX_CEC_LINE
+         P$10     HDMI_CEC_C
+         P$2      HDMI_TX_DDC_SCL
+         P$3      PE
+         P$4      HDMI_TX_DDC_SDA
+         P$5      HDMI_HPD
+         P$6      HDMI_HPD_C
+         P$7      HDMI_SDA_C
+         P$8      PE
+         P$9      HDMI_SCL_C
+
+U$6      1        PE
+         2        V_1V5
+         3        3V2
+
+U$7      1        PE
+         2        1V5
+         3        3V2
+
+U7       A1       DN3_PERST
+         A10      PE
+         A11      3V2
+         A12               *** unconnected ***
+         A13      1V5
+         A14               *** unconnected ***
+         A2       DN2_PERST
+         A3       3V2
+         A4       1V5
+         A5       PE
+         A6       PCIE_RXP1
+         A7       VDDA15_1
+         A8       PCIE_TXP
+         A9       REFCLKP_1_R
+         B1       DISP1_DATA05
+         B10      1V5
+         B11               *** unconnected ***
+         B12      1V5
+         B13               *** unconnected ***
+         B14      I2C1_SCL
+         B2       1V5
+         B3       1V5
+         B4       3V2
+         B5       DN1_PERST
+         B6       PCIE_RXM1
+         B7       1V5
+         B8       PCIE_TXM1
+         B9       REFCLKN_1_R
+         C1       VDDCOMB15
+         C10      PE
+         C11      1V5
+         C12               *** unconnected ***
+         C13      1V5
+         C14      1V5
+         C2                *** unconnected ***
+         C3                *** unconnected ***
+         C4       PE
+         C5       1V5
+         C6                *** unconnected ***
+         C7       PE
+         C8       PE
+         C9       PE
+         D1       PE
+         D10      PE
+         D11      PE
+         D12      3V2
+         D13      I2C1_SDA
+         D14               *** unconnected ***
+         D2                *** unconnected ***
+         D3       VDDCOMBIO
+         D4       3V2
+         D5       PE
+         D6       PE
+         D7       VDDA15_1
+         D8       VDDA15_1
+         D9       VDDA15_1
+         E1       VAUX33REF
+         E10      PE
+         E11      PE
+         E12      PE
+         E13      1V5
+         E14      PE
+         E2       VDD33REF
+         E3                *** unconnected ***
+         E4       PE
+         E5       PE
+         E6       PE
+         E7       PE
+         E8       PE
+         E9       PE
+         F1       1V5
+         F10      PE
+         F11      PE
+         F12      PE
+         F13      PCIE_RXP2
+         F14      PCIE_RXM2
+         F2       1V5
+         F3       VDD15REF
+         F4       VDDCOMB33
+         F5       PE
+         F6       PE
+         F7       PE
+         F8       PE
+         F9       PE
+         G1       PCIE_TXP
+         G10      PE
+         G11      VDDA15_2
+         G12      VDDA15_2
+         G13      1V5
+         G14      PE
+         G2       PCIE_TXM
+         G3       PE
+         G4       VDDA15_0
+         G5       PE
+         G6       PE
+         G7       PE
+         G8       PE
+         G9       PE
+         H1       PE
+         H10      PE
+         H11      VDDA15_2
+         H12      PE
+         H13      PCIE_TXP2
+         H14      PCIE_TXM2
+         H2       VDDA15_0
+         H3       1V5
+         H4       VDDA15_0
+         H5       PE
+         H6       PE
+         H7       PE
+         H8       PE
+         H9       PE
+         J1       PCIE_RXP
+         J10      PE
+         J11      VDDA15_2
+         J12      VDDA15_2
+         J13      PE
+         J14      REFCLKN_2_R
+         J2       PCIE_RXM
+         J3       VDDA33F
+         J4       VDDA15_0
+         J5       PE
+         J6       PE
+         J7       PE
+         J8       PE
+         J9       PE
+         K1       PE
+         K10      PE
+         K11      PE
+         K12      3V2
+         K13      PE
+         K14      REFCLKP_2_R
+         K2       PE
+         K3       VDDA15_0
+         K4       1V5
+         K5       PE
+         K6       PE
+         K7       PE
+         K8       PE
+         K9       PE
+         L1       N$77
+         L10      PE
+         L11      PE
+         L12               *** unconnected ***
+         L13      PE
+         L14      1V5
+         L2       N$75
+         L3                *** unconnected ***
+         L4       PE
+         L5       PE
+         L6       VDDA15_3
+         L7       VDDA15_3
+         L8       VDDA15_3
+         L9       PE
+         M1       1V5
+         M10               *** unconnected ***
+         M11      1V5
+         M12      1V5
+         M13               *** unconnected ***
+         M14               *** unconnected ***
+         M2       1V5
+         M3                *** unconnected ***
+         M4       3V2
+         M5       PE
+         M6       VDDA15_3
+         M7       PE
+         M8       VDDA15_3
+         M9       PE
+         N1       3V2
+         N10      1V5
+         N11               *** unconnected ***
+         N12               *** unconnected ***
+         N13      1V5
+         N14      1V5
+         N2                *** unconnected ***
+         N3                *** unconnected ***
+         N4       PE
+         N5       PE
+         N6       PE
+         N7       PCIE_TXP3
+         N8       1V5
+         N9       PCIE_RXP3
+         P1       PE
+         P10      PE
+         P11      3V2
+         P12               *** unconnected ***
+         P13               *** unconnected ***
+         P14      1V5
+         P2                *** unconnected ***
+         P3       1V5
+         P4       1V5
+         P5       REFCLKP_3_R
+         P6       REFCLKN_3_R
+         P7       PCIE_TXM3
+         P8       PE
+         P9       PCIE_RXM3
+
+UART_BUF_0 P$1      UART1_TX_DATA
+         P$2      PE
+         P$3      RXD0
+         P$4      UART1_RX_DATA
+         P$5      3V2
+         P$6      TXD0
+
+UART_BUF_1 P$1      UART2_TX_DATA
+         P$2      PE
+         P$3      RXD1
+         P$4      UART2_RX_DATA
+         P$5      3V2
+         P$6      TXD1
+
+UART_BUF_2 P$1      UART3_TX_DATA
+         P$2      PE
+         P$3      RXD2
+         P$4      UART3_RX_DATA
+         P$5      3V2
+         P$6      TXD2
+
+USBCON_1 1        USB_H1_VBUS
+         2        USB_HUB_DN1
+         3        USB_HUB_DP1
+         4        PE
+
+USBCON_OTG 1        USB_OTG_VBUS
+         2        USB_OTG_DN
+         3        USB_OTG_DP
+         4        PE
+
+USB_AUDIO_CODEC 1        N$38
+         10       N$40
+         11       PE
+         12       N$43
+         13       N$44
+         14       N$41
+         15       N$49
+         16       N$50
+         17       N$42
+         18       PE
+         19       N$33
+         2        N$37
+         20       XOUT
+         21       XIN
+         22       AGNDX
+         23       N$32
+         24       PE
+         25                *** unconnected ***
+         26       PE
+         27       N$56
+         28       MUTE/PWR_DOWN
+         3        N$36
+         4        PE
+         5        N$52
+         6        N$53
+         7        N$55
+         8        N$56
+         9        N$56
+
+USB_CURR_LIM 1        USB_OTG_PWR_EN
+         2                 *** unconnected ***
+         3                 *** unconnected ***
+         4        USB_H1_PWR_EN
+         5        USB_H1_VBUS
+         6        N$39
+         7        +5V
+         8        USB_OTG_VBUS
+
+USB_HUB  1        V_3V2_FLTR
+         10       USB_HUB_DP2
+         11       N$34
+         12       V_3V2_FLTR
+         13       PE
+         14       XIN
+         15       XOUT
+         16       V_3V2_FLTR
+         17       USB_HUB_DN3
+         18       USB_HUB_DP3
+         19       V_3V2_FLTR
+         2        PE
+         20       PE
+         21       USB_HUB_DN4
+         22       USB_HUB_DP4
+         23       3V2
+         24                *** unconnected ***
+         25                *** unconnected ***
+         26       POR_B
+         27                *** unconnected ***
+         28                *** unconnected ***
+         29                *** unconnected ***
+         3        USB_HOST_DN
+         30                *** unconnected ***
+         31                *** unconnected ***
+         32                *** unconnected ***
+         33                *** unconnected ***
+         34       3V2
+         35                *** unconnected ***
+         36                *** unconnected ***
+         37       3V2
+         38       3V2
+         39       N$35
+         4        USB_HOST_DP
+         40                *** unconnected ***
+         41                *** unconnected ***
+         42                *** unconnected ***
+         43                *** unconnected ***
+         44                *** unconnected ***
+         45                *** unconnected ***
+         46                *** unconnected ***
+         47       VCC
+         48       V_3V2_FLTR
+         5        USB_HUB_DN1
+         6        USB_HUB_DP1
+         7        V_3V2_FLTR
+         8        PE
+         9        USB_HUB_DN2
+
+VREG_1   1        N$27
+         2        N$25
+         3                 *** unconnected ***
+         4        +5V
+         5        N$7
+         6                 *** unconnected ***
+         7        N$19
+         8                 *** unconnected ***
+         P$1      PE
+
+X1       C1       UIM_PWR_2
+         C2       UIM_CLK_2
+         C3       PE
+         C4       UIM_DATA_2
+         C5       UIM_RST_2
+         C6       UIM_AUX1_2
+         C7       UIM_VPP_2
+         C8       UIM_AUX2_2
+
+X3       C1       UIM_PWR_1
+         C2       UIM_CLK_1
+         C3       PE
+         C4       UIM_DATA_1
+         C5       UIM_RST_1
+         C6       UIM_AUX1_1
+         C7       UIM_VPP_1
+         C8       UIM_AUX2_1
+
