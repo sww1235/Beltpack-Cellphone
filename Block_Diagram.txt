@@ -1,0 +1,61 @@
+In a machined aluminum beltpack housing IP6X
+
+Has 2 voice and data modems for each of: CDMA; EVDO rev a and b, GSM, LTE, satellite phone.
+
+Has dual gps receivers and bluetooth.
+
+Power connection is 4pin xlr (12V) like pro video cameras. Can also accept power from USB.
+
+Data connection is standard cellphone micro-usb. Also has neutrik ethercon ethernet connection.
+
+Audio connection is standard stereo headset 5pin xlr.
+
+Custom headphones are custom 5 driver IEMs with internal crossovers. They also have internal jawbone mics
+
+Earbuds are connected to a connection box at nape of neck. Allows for connection of different devices, has connector for each earbud+mic, sepeate mic, and output cable
+
+Allows for connection of different output cables, such as one for the beltpack, one for a standard 3 conductor 3.5mm jack, 4 conductor 3.5mm jack, 2 3 conductor 3.5mm jacks, etc
+
+Fastest processor and most ram/flash storage that can fit on the board. Processor must have a throttling mode so it does not murder battery life.
+
+
+All custom connectors not otherwise specified are lemo round connectors
+
+Has GPIO port as well.
+
+OS is customized version of Android with simulator for IOS and Windows Phone OSes. All the graphics code has been removed because of no screen. 
+
+Interface is done via app for android tablet and phone. All gui processing is done on slave device.
+
+Guts consist of customized raspberry pi and cellular chips.
+
+List of requirements for electronics:
+
+GPIO
+1x serial I/O
+NFC
+Bluetooth
+FM radio transceiver
+Business band radio transceiver
+CB radio transceiver
+HAM radio transceiver
+(BB,CB, HAM may all be one physical chip and just controlled in software)
+Dual wifi chips (2.4/5hGz) each
+Quad cellular modems that support LTE FDD, LTE TDD, WCDMA (DC-HSPA+, DC-HSUPA), CDMA1x, EV-DO Rev. B, TD-SCDMA and GSM/EDGE, LTE- Broadcast, LTE multimode dual-SIM (DSDS and DSDA) and HD VoLTE with SRVCC.
+USB host
+Sata-either mSata or 2.5” sata
+
+
+List of possible chips/chips with some of the features that I want
+
+BCM43341 (Single Chip, Dual-Band (2.4 GHz / 5 GHz) 802.11 g/n MAC/Baseband/Radio with Integrated Bluetooth 4.0, NFC + FM Receiver)
+BCM2835 (High Definition 1080p Embedded Multimedia Applications Processor)
+Snapdragon 810. (mobile cellphone processor that includes CPU, GPU, cellular connection, wifi, usb, gps, bluetooth, nfc built in.)
+
+General assembly is motherboard, with daughter boards for Rpi; cellular communications; wifi, bluetooth, gps; FM,BB,CB,HAM, RAM for processors (maybe already integrated into processors).
+
+mSATA for hard drive. 
+
+Ideally have all daugher boards on one side, with other necessary chips on reverse. Have thin aluminum shield then have the battery completely fill the remainder of the box. Have both internal antennas and mini connections for external antennas.
+
+Display and control is either by off the shelf tablet/touch device (probably custom android to avoid using an app) or interfacing with google glass equivalents or smart watches. Also some basic control via GPIO/serial. 
