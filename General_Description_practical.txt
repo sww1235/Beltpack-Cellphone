@@ -1,0 +1,39 @@
+In a machined aluminum beltpack housing IP6X
+
+Has two PCI-E slots for various radios
+
+ Wifi, gps receiver and bluetooth are integrated into SOM
+
+Power connection is locking barrel connector w/ cover. Can also accept power from USB.
+
+Data connection is standard cellphone micro-usb. Also has ethernet connection w/ cover.
+
+Audio connection is stereo headset 5pin mini xlr.
+
+Custom headphones are custom 5 driver IEMs with internal crossovers. (ideal)
+
+various adapters for headphones and headsets
+
+Use Hummingboard SOM for main processor
+
+GPIO port is DB25 connector on side of device under a water proof cover
+
+OS is terminal only version of linux with option of loading into xwindows
+customized version of Android with simulator for IOS and Windows Phone OSes. All the graphics code has been removed because of no screen. 
+
+Interface is done via app for android tablet and phone (or custom device based on same system). All gui processing is done on slave device.
+
+List of requirements for electronics:
+
+
+
+
+
+
+General assembly is motherboard, with daughter boards for Rpi; cellular communications; wifi, bluetooth, gps; FM,BB,CB,HAM, RAM for processors (maybe already integrated into processors). Daughter card for connectors as well
+
+mSATA for hard drive. 
+
+Ideally have all daugher boards on one side, with other necessary chips on reverse. Have thin aluminum shield then have the battery completely fill the remainder of the box. Have both internal antennas and mini connections for external antennas.
+
+Display and control is either by off the shelf tablet/touch device (probably custom android to avoid using an app) or interfacing with google glass equivalents or smart watches. Also some basic control via GPIO/serial. 
