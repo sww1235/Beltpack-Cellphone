@@ -1,0 +1,13 @@
+Change some USB to USBC
+Use micro HDMI connector
+Use mini xlr 5 pin for headset connector - weatherproof
+Use DB25 on side as GPIO interface.
+
+
+Power connector is locking barrel jack - switchcraft - sealing 
+
+JCAP - DC Power Connectors Power Jack Seal Cap
+
+761KS17 - DC Power Connectors Pwr Plug Sealed IP68 2.5mm lckg Black Tip
+
+712A - DC Power Connectors 2.5MM ROUND W/NUT
